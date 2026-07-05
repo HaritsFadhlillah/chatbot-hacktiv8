@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazadis@Net - Warnet Print & PPOB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <h1 class="logo">Lazadis<span>@Net</span></h1>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero">
+        <div class="hero-content">
+            <h2>Solusi Digital UMKM Rorotan</h2>
+            <p>Layanan Print, Fotocopy, dan Pembayaran Digital (PPOB) Terpercaya.</p>
+            <a href="#kontak" class="btn">Hubungi Kami</a>
+        </div>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="tentang" class="section">
+        <div class="container">
+            <h2 class="section-title">Tentang Kami</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Lazadis@Net adalah unit usaha UMKM yang fokus melayani kebutuhan dokumen dan transaksi digital masyarakat. Kami bukan warnet game, melainkan pusat layanan produktivitas Anda.</p>
+                    <ul class="services-list">
+                        <li><i class="fas fa-check"></i> Print Dokumen & Tugas</li>
+                        <li><i class="fas fa-check"></i> Fotocopy & Scan</li>
+                        <li><i class="fas fa-check"></i> Pembayaran PPOB (Listrik, PDAM, BPJS)</li>
+                        <li><i class="fas fa-check"></i> Top Up E-Wallet</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section id="testimoni" class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Apa Kata Mereka?</h2>
+            <div class="testimonial-grid">
+                <div class="card">
+                    <p>"Tempat langganan nge-print tugas kuliah, hasilnya tajam dan cepat!"</p>
+                    <h4>- Budi Santoso</h4>
+                </div>
+                <div class="card">
+                    <p>"Bayar tagihan listrik dan PDAM jadi praktis dekat rumah. Pelayanan ramah."</p>
+                    <h4>- Ibu Ratna</h4>
+                </div>
+                <div class="card">
+                    <p>"Fotocopy-nya bersih dan harganya sangat bersahabat untuk pelajar."</p>
+                    <h4>- Andi Wijaya</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="section">
+        <div class="container">
+            <h2 class="section-title">Kontak Kami</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Malaka III, RT.1/RW.6, Rorotan, Kec. Cilincing, Jkt Utara, DKI Jakarta 14140</p>
+                <p><i class="fas fa-phone"></i> +62 812-3456-789</p>
+                <p><i class="fas fa-clock"></i> Buka Setiap Hari: 08.00 - 21.00 WIB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot Toggle Button -->
+    <button id="chat-toggle-btn">
+        <i class="fas fa-comment-dots"></i>
+    </button>
+
+    <!-- Chatbot Widget -->
+    <div id="chat-widget">
+        <div id="chat-header">
+            <div>
+                <strong>Lazadis Assistant</strong>
+                <div class="chat-subtitle">Live support</div>
+            </div>
+            <div class="chat-actions">
+                <button id="new-chat-btn" title="Buat chat baru">+</button>
+                <button id="close-chat" title="Tutup chat">−</button>
+            </div>
+        </div>
+        <div id="chat-session-list"></div>
+        <div id="chat-box">
+            <div class="bot-msg">Halo! Ada yang bisa kami bantu mengenai layanan Lazadis@Net?</div>
+        </div>
+        <form id="chat-form">
+            <input type="file" id="chat-file" accept="image/*,.pdf,.doc,.docx,.txt">
+            <label for="chat-file" class="attach-btn" title="Lampirkan file"><i class="fas fa-paperclip"></i></label>
+            <input type="text" id="user-input" placeholder="Ketik pesan...">
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lazadis@Net. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
